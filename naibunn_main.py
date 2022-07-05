@@ -2,7 +2,7 @@ import numpy as np
 import itertools as it
 
 #データの読み込み
-data = np.loadtxt('t=0.txt',skiprows=2) #'t=0.txt'を上２行をすっ飛ばして読む
+data = np.loadtxt('t=35.txt',skiprows=0) #'t=0.txt'を上２行をすっ飛ばして読む
 
 
 #データの仕分け
@@ -35,4 +35,4 @@ for i,j in c2list:
         )
         add = np.array([f2dataR,f2dataI])
         f2data = np.vstack((f2data,add))           #addとf2dataは横列が同じでなければならない(上で箱の大きさを設定しておく必要がある)
-np.savetxt('t=0の時の２点内分.txt',f2data,delimiter="	") #書き出し
+np.savetxt('t=35の時の２点内分.txt',f2data,delimiter="	") #書き出し
